@@ -16,8 +16,10 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
-    - name: Install Bandit
-    run: pip install Bandit
+     - name: Install Bandit
+     run: pip install bandit
+    - name: Run Bandit
+      run: bandit -r .
       run: pip install bandit
 
    
